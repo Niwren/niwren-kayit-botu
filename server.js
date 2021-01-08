@@ -1,6 +1,6 @@
 ////----------------------- ALTYAPI NİWREN TARAFINDAN YAPILMIŞTIR PAYLAŞILMASI YASAKTIR -----------------------\\\\
 ////----------------------- ALTYAPIDA ÇIKACAK ARIZALAR İÇİN Reco#0099 ULAŞABİLİRSİNİZ -----------------------\\\\
-////----------------------- 30 STARDA PUBLİC İÇİN TASARLANMIŞ MODERASYON BOTU PAYLAŞILACAKTIR -----------------------\\\\
+////----------------------- 30 STARDA PUBLİC İÇİN TASARLANMIŞ EMOJİLİ KAYIT BOTU PAYLAŞILACAKTIR -----------------------\\\\
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
