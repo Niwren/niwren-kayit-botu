@@ -158,6 +158,6 @@ setInterval(() => {
             await member.roles.set("kayıtsız rolü")
         }
     })
-}, 5 * 1000)// 5 kısmını değiştirebilirsiniz
+}, 60 * 1000)// 60(60 saniye) kısmını değiştirebilirsiniz
 
-client.login('')
+client.login('')//token
