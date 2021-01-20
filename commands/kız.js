@@ -29,7 +29,7 @@ module.exports = {
         db.set(`kayıt_${member.id}`, true)
         db.add(`kız_${message.author.id}`, 1)
         await message.guild.members.cache.get(member.id).roles.remove(client.config.unregisteres)
-        await message.guild.members.cache.get(member.id).roles.add(client.config.maleRoles)
+        await message.guild.members.cache.get(member.id).roles.add(client.config.girlRoles)
         message.channel.send(embed2.setDescription(`${member} adlı kullanıcı \`${name} | ${age}\` isminde kayıt edildi! (<@&kızrolİD>)`)
 
         )
