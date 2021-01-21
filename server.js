@@ -113,7 +113,7 @@ client.on('guildMemberAdd', (member) => {
 
  Hesabın **${createAt}** önce açılmış`)
     } else {
-        client.channels.cache.get(registerChannel).send(
+        client.channels.cache.get(client.config.channelID).send(
             new Discord.MessageEmbed()
             .setAuthor(member.user.username, member.user.avatarURL({ dynamic: true }))
             .setDescription(`${member}, Adlı Kullanıcı Sunucuya Katıldı Hesabı **${createAt2}** Önce Açıldığı İçin Şüpheli!`)
