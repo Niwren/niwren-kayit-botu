@@ -39,8 +39,7 @@ module.exports = {
             • Sunucuda sesli sohbetlerde toplam **${Sesli}** üye bulunmakta`)
             .setFooter(client.user.username, client.user.avatarURL())
             .setTimestamp()
-            .setThumbnail(message.member.displayName, message.author.avatarURL({ dynamic: true }))
-            .setThumbnail(message.author.avatarURL)
+            .setThumbnail(message.author.avatarURL())
             .setFooter('Niwren was here')
         message.channel.send(embed)
     }
