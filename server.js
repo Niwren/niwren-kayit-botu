@@ -1,5 +1,5 @@
 ////----------------------- ALTYAPI NİWREN TARAFINDAN YAPILMIŞTIR PAYLAŞILMASI YASAKTIR -----------------------\\\\
-////----------------------- ALTYAPIDA ÇIKACAK ARIZALAR İÇİN Reco#0099 ULAŞABİLİRSİNİZ -----------------------\\\\
+////----------------------- ALTYAPIDA ÇIKACAK ARIZALAR İÇİN Niwren#0099 ULAŞABİLİRSİNİZ -----------------------\\\\
 ////----------------------- 30 STARDA PUBLİC İÇİN TASARLANMIŞ EMOJİLİ KAYIT BOTU PAYLAŞILACAKTIR -----------------------\\\\
 
 const Discord = require('discord.js');
@@ -138,26 +138,5 @@ client.on('message', msg => {
     }
 });
 
-
-////----------------------- TAG TARAMASI KISMI -----------------------\\\\
-setInterval(() => {
-    const server = client.guilds.cache.get("768873231502671923"); //Server ID 
-    server.members.cache.forEach(async member => {
-        if (member.roles.cache.has("VİP") || member.roles.cache.has("BOOSTER")) return; //VİP&BOOSTER ROL İD
-
-/*   Yasaklı Tag    */
-   if(member.user.username.includes("tasaklıTAG")){
-        member.roles.set(["Yasaklı Tag Rol ID"]).catch(() => {}) 
-    }
-
-
- if (member.user.username.includes("tagı")) {
-            await member.roles.add("taglı rolü").catch(() => {})
-        }
-        if (!member.user.username.includes("tag")) {
-            await member.roles.set("kayıtsız rolü")
-        }
-    })
-}, 60 * 1000)// 60(60 saniye) kısmını değiştirebilirsiniz
 
 client.login('')//token
