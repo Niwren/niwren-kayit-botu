@@ -21,7 +21,7 @@ module.exports = {
         if (!age) return message.channel.send(embed.setDescription("Kullanıcı için bir yaş yazılmak zorunda!"))
 
         message.guild.members.cache.get(member.id).setNickname(`• ${name} | ${age}`)
-        db.push(`isimler_${member.id}`, ` \`${name} | ${age}\` (isim değiştirme>)`);
+        db.push(`isimler_${member.id}`, ` \`${name} | ${age}\` (isim değiştirme)`);
         message.channel.send(embed.setDescription(`${member} adlı kullanıcının ismi \`${name} | ${age}\` olarak değiştirildi`)
 
         )
